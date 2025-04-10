@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- tinh chỉnh màn hình cho mọi thiết bị -->
+		<title>mainmenu</title>	
+	</head>	
+	<style>
+			@import "IF.css";
+			@import "HTMH.css";
+	</style>
+	<body>
+	<!-- đặt toàn bộ phần sắp xếp không thứ tự thành 1 khối cho dễ chỉnh sửa -->
+		<div class="name">
+		<!-- Đây là lệnh sắp xếp không thứ tự -->
+			<ul>
+			<li class="1">Họ tên: Huỳnh Thị Mỹ Hạnh</li>
+			<li><span class="1">Năm sinh: 10/7/2007</span></li>
+			<li><span class="1">Giới tính: Nữ</span></li>
+			<li><span class="1">Học sinh lớp: 12a5</span></li>
+			<li><span class="1">Địa chỉ: Xóm 2, thôn Liễu An, Hoài Châu Bắc, Hoài Nhơn, Bình Định</span></li>
+			<li><span class="1">Sở thích: ăn uống, ngủ, nghe nhạc, đọc sách, chơi game, thể thao,đi chơi ,xem phim</span> </li>
+			<li><span class="1">Là thành viên tổ 2</span></li>
+			</ul>
+		</div>
+		<!-- đặt khối cho ảnh để chỉnh sửa -->
+		<div class="pic">
+		<!-- Lệnh thêm ảnh -->
+			<img src="HTMH.jpg" alt="Ảnh lỗi">
+		</div>
+		<!-- Đặt khối cho chữ giới thiệu cá nhân -->
+		<div class="prs">
+		<!--lệnh thêm chữ giới thiệu cá nhân-->
+			<span><b>Giới Thiệu cá nhân<b></span>
+		</div>
+		<!-- Lệnh thêm video -->
+		<video class="videoprs" src="HTMH.mp4" sizes="100%" autoplay muted loop > </video>
+		<!-- lệnh thêm âm thanh -->
+		<audio id="audioprs" autoplay src="HTMH.mp3" preload="auto" loop hidden > </audio>
+		<div class="linkmain">
+		<!-- lệnh thêm hình ngôi nhà để quay về trang chủ -->
+			<a href="../mainmenu.html"><img src="home.jpg" height="60px" width="80px"></a>
+		</div>
+		<div class="back">
+		<!-- lệnh thêm hình mũi tên quay lại -->
+			<a href="../list.html"><img src="back.jpg" height="60px" width="60px"></a>
+		</div>
+		<!-- Đây là Javascript để chỉnh âm thanh nhỏ đi 1/5 -->
+		<script>
+			const sound = document.getElementById("audioprs");<!-- khai báo biến sound có id là audioprs -->
+				sound.volume=0.2; <!-- chỉnh âm lượng nhỏ đi 1/5 -->
+		</script>
+	</body>
+</html>
+		
+		
+			
